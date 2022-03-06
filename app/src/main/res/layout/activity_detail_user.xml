@@ -9,7 +9,7 @@
     tools:context=".DetailUser">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:id="@+id/detail_avatar"
@@ -32,6 +32,7 @@
             android:textAlignment="center"
             android:textSize="32sp"
             android:textStyle="bold"
+            android:textColor="@color/dark_charcoal"
             app:layout_constraintEnd_toEndOf="@+id/detail_avatar"
             app:layout_constraintStart_toStartOf="@+id/detail_avatar"
             app:layout_constraintTop_toBottomOf="@+id/detail_avatar" />
@@ -45,6 +46,7 @@
             android:textSize="16sp"
             android:textStyle="bold"
             android:textAlignment="center"
+            android:textColor="@color/dark_charcoal"
             app:layout_constraintEnd_toEndOf="@+id/detail_username"
             app:layout_constraintStart_toStartOf="@+id/detail_username"
             app:layout_constraintTop_toBottomOf="@+id/detail_username" />
@@ -56,10 +58,22 @@
             tools:text="Company received"
             android:textAlignment="center"
             android:layout_marginTop="8dp"
+            android:textColor="@color/dark_charcoal"
             app:layout_constraintEnd_toEndOf="@+id/detail_name"
             app:layout_constraintStart_toStartOf="@+id/detail_name"
             app:layout_constraintTop_toBottomOf="@+id/detail_name" />
 
+        <TextView
+            android:id="@+id/detail_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/dark_charcoal"
+            app:layout_constraintEnd_toEndOf="@+id/detail_company"
+            app:layout_constraintStart_toStartOf="@+id/detail_company"
+            app:layout_constraintTop_toBottomOf="@+id/detail_company"
+            tools:text="Location received"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/detail_follower"
@@ -68,6 +82,7 @@
             android:layout_marginEnd="8dp"
             tools:text="follower received"
             android:textAlignment="center"
+            android:textColor="@color/dark_charcoal"
             app:layout_constraintBottom_toBottomOf="@+id/detail_following"
             app:layout_constraintEnd_toStartOf="@+id/detail_following"
             app:layout_constraintStart_toStartOf="parent"
@@ -82,18 +97,8 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/detail_location"
             tools:text="following received"
+            android:textColor="@color/dark_charcoal"
             android:textAlignment="center"/>
-
-        <TextView
-            android:id="@+id/detail_location"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            app:layout_constraintEnd_toEndOf="@+id/detail_company"
-            app:layout_constraintStart_toStartOf="@+id/detail_company"
-            app:layout_constraintTop_toBottomOf="@+id/detail_company"
-            tools:text="Location received"
-            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/detail_repositories"
@@ -102,6 +107,7 @@
             tools:text="repositories received"
             android:textAlignment="center"
             android:layout_marginStart="8dp"
+            android:textColor="@color/dark_charcoal"
             app:layout_constraintBottom_toBottomOf="@+id/detail_following"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/detail_following"
