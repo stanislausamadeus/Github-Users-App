@@ -4,7 +4,8 @@
     <string name="user_name">Nama User</string>
     <string name="follower">Follower: </string>
     <string name="following">Following: </string>
-    <string name="repositories">Repositories; </string>
+    <string name="repositories">Repositories: </string>
+    <string name="item_avatar">avatar</string>
 
     <!-- Other string resources-->
 

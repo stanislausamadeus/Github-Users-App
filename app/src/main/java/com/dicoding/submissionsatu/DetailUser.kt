@@ -27,9 +27,9 @@ class DetailUser : AppCompatActivity() {
         val nameText = user.dataName
         val companyText = user.dataCompany
         val locationText = user.dataLocation
-        val followerText = user.dataFollower
-        val followingText = user.dataFollowing
-        val repositoriesText = user.dataRepositories
+        val followerText = getString(R.string.follower) + user.dataFollower
+        val followingText = getString(R.string.following) + user.dataFollowing
+        val repositoriesText = getString(R.string.repositories) + user.dataRepositories
         Glide.with(this)
              .load(avatarImage)
              .circleCrop()
@@ -38,9 +38,9 @@ class DetailUser : AppCompatActivity() {
         tvName.text = nameText
         tvCompany.text = companyText
         tvLocation.text = locationText
-        tvFollower.text = "Follower: $followerText"
-        tvFollowing.text = "Following: $followingText"
-        tvRepositories.text = "Repositories: $repositoriesText"
+        tvFollower.text = followerText
+        tvFollowing.text = followingText
+        tvRepositories.text = repositoriesText
         Log.d("Detail Name", user.dataName)
     }
 
