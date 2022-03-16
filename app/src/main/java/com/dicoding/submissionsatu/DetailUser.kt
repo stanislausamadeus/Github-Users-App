@@ -1,6 +1,5 @@
 package com.dicoding.submissionsatu
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,11 +8,6 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 
 class DetailUser : AppCompatActivity() {
-    companion object{
-        const val EXTRA_USER ="extra_user"
-    }
-
-    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail_user)
@@ -28,14 +22,14 @@ class DetailUser : AppCompatActivity() {
         val tvLocation: TextView = findViewById(R.id.detail_location)
 
         val user = intent.getParcelableExtra<User>(EXTRA_USER) as User
-        val avatarImage = user.data_avatar
-        val usernameText = user.data_username
-        val nameText = user.data_name
-        val companyText = user.data_company
-        val locationText = user.data_location
-        val followerText = user.data_follower
-        val followingText = user.data_following
-        val repositoriesText = user.data_repositories
+        val avatarImage = user.dataAvatar
+        val usernameText = user.dataUsername
+        val nameText = user.dataName
+        val companyText = user.dataCompany
+        val locationText = user.dataLocation
+        val followerText = user.dataFollower
+        val followingText = user.dataFollowing
+        val repositoriesText = user.dataRepositories
         Glide.with(this)
              .load(avatarImage)
              .circleCrop()
@@ -47,6 +41,10 @@ class DetailUser : AppCompatActivity() {
         tvFollower.text = "Follower: $followerText"
         tvFollowing.text = "Following: $followingText"
         tvRepositories.text = "Repositories: $repositoriesText"
-        Log.d("Detail Name", user.data_name)
+        Log.d("Detail Name", user.dataName)
+    }
+
+    companion object{
+        const val EXTRA_USER ="extra_user"
     }
 }

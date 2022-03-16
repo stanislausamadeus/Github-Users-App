@@ -25,25 +25,25 @@ class MainActivity : AppCompatActivity() {
 
     private val listUsers : ArrayList<User>
     get(){
-        val dataUsername = resources.getStringArray(R.array.username)
-        val dataName = resources.getStringArray(R.array.name)
-        val dataFollower = resources.getStringArray(R.array.followers)
-        val dataFollowing = resources.getStringArray(R.array.following)
-        val dataCompany = resources.getStringArray(R.array.company)
-        val dataLocation = resources.getStringArray(R.array.location)
-        val dataRepositories = resources.getStringArray(R.array.repository)
-        val dataAvatar = resources.obtainTypedArray(R.array.avatar)
+        val listUsername = resources.getStringArray(R.array.username)
+        val listName = resources.getStringArray(R.array.name)
+        val listFollower = resources.getStringArray(R.array.followers)
+        val listFollowing = resources.getStringArray(R.array.following)
+        val listCompany = resources.getStringArray(R.array.company)
+        val listLocation = resources.getStringArray(R.array.location)
+        val listRepositories = resources.getStringArray(R.array.repository)
+        val listAvatar = resources.obtainTypedArray(R.array.avatar)
         val listUser = ArrayList<User>()
-        for (i in dataUsername.indices){
+        for (i in listUsername.indices){
             val user = User(
-                dataUsername[i],
-                dataFollower[i],
-                dataFollowing[i],
-                dataRepositories[i],
-                dataAvatar.getResourceId(i,-1),
-                dataName[i],
-                dataCompany[i],
-                dataLocation[i]
+                listUsername[i],
+                listFollower[i],
+                listFollowing[i],
+                listRepositories[i],
+                listAvatar.getResourceId(i,-1),
+                listName[i],
+                listCompany[i],
+                listLocation[i]
             )
             listUser.add(user)
         }
