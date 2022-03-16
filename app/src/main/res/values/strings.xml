@@ -6,6 +6,9 @@
     <string name="following">Following: </string>
     <string name="repositories">Repositories: </string>
     <string name="item_avatar">avatar</string>
+    <string name="textfollower">Follower</string>
+    <string name="textfollowing">Following</string>
+    <string name="textrepositories">Repositories</string>
 
     <!-- Other string resources-->
 

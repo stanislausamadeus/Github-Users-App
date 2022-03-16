@@ -83,7 +83,6 @@
             android:layout_marginEnd="8dp"
             tools:text="follower received"
             android:textAlignment="center"
-            android:textColor="@color/dark_charcoal"
             app:layout_constraintBottom_toBottomOf="@+id/detail_following"
             app:layout_constraintEnd_toStartOf="@+id/detail_following"
             app:layout_constraintStart_toStartOf="parent"
@@ -98,21 +97,55 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/detail_location"
             tools:text="following received"
-            android:textColor="@color/dark_charcoal"
             android:textAlignment="center"/>
 
         <TextView
             android:id="@+id/detail_repositories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="repositories received"
-            android:textAlignment="center"
             android:layout_marginStart="8dp"
-            android:textColor="@color/dark_charcoal"
+            android:textAlignment="center"
             app:layout_constraintBottom_toBottomOf="@+id/detail_following"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/detail_following"
-            app:layout_constraintTop_toTopOf="@+id/detail_following" />
+            app:layout_constraintTop_toTopOf="@+id/detail_following"
+            tools:text="repositories received" />
+
+        <TextView
+            android:id="@+id/text_follower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textfollower"
+            android:textAlignment="center"
+            android:textColor="@color/dark_charcoal"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/detail_follower"
+            app:layout_constraintStart_toStartOf="@+id/detail_follower"
+            app:layout_constraintTop_toBottomOf="@+id/detail_follower" />
+
+        <TextView
+            android:id="@+id/text_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textfollowing"
+            android:textAlignment="center"
+            android:textColor="@color/dark_charcoal"
+            android:layout_marginTop="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/detail_following"
+            app:layout_constraintStart_toStartOf="@+id/detail_following"
+            app:layout_constraintTop_toBottomOf="@+id/detail_following" />
+
+        <TextView
+            android:id="@+id/text_repositories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/textrepositories"
+            android:textColor="@color/dark_charcoal"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@+id/detail_repositories"
+            app:layout_constraintStart_toStartOf="@+id/detail_repositories"
+            app:layout_constraintTop_toBottomOf="@+id/detail_repositories" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
