@@ -1,4 +1,4 @@
-package com.dicoding.submissionsatu
+package com.dicoding.githubusersapp
 
 import android.os.Parcelable
 import kotlinx.parcelize.Parcelize

@@ -1,4 +1,4 @@
-package com.dicoding.submissionsatu
+package com.dicoding.githubusersapp
 
 import org.junit.Test
 

@@ -2,9 +2,9 @@
     <string name="app_name">GithubUsersApp</string>
     <string name="app_logo">GithubUsersLogo</string>
     <string name="user_name">Nama User</string>
-    <string name="follower">Follower: </string>
-    <string name="following">Following: </string>
-    <string name="repositories">Repositories: </string>
+    <string name="follower">%s follower </string>
+    <string name="following">%s following </string>
+    <string name="repositories">%s repositories </string>
     <string name="item_avatar">avatar</string>
     <string name="textfollower">Follower</string>
     <string name="textfollowing">Following</string>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.dicoding.submissionsatu">
+    package="com.dicoding.githubusersapp">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SubmissionSatu">
         <activity
-            android:name=".SplashScreen"
+            android:name="com.dicoding.githubusersapp.SplashScreen"
             android:exported="true"
             android:theme="@style/SplashScreen">
             <intent-filter>
@@ -21,10 +21,10 @@
         </activity>
 
         <activity
-            android:name=".DetailUser"
+            android:name="com.dicoding.githubusersapp.DetailUser"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.dicoding.githubusersapp.MainActivity"
             android:label="GitHub Users"
             android:exported="false" >
 
